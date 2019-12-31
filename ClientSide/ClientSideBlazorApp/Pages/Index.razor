@@ -1,0 +1,16 @@
+﻿@page "/"
+<AlertComponent Message="@message" />
+<ProductDetailComponent Product="@product"></ProductDetailComponent>
+<SurveyPrompt Title="@title"></SurveyPrompt>
+
+@code{
+    Product product = new Product()
+    {
+        Name = "Product name",
+        Category = "Category-A",
+        Description = "Product Description...",
+        Link = "https://www.google.com"
+    };
+    string message = "Are sure wants to delete this?";
+    string title = "Submit your survey!";
+}

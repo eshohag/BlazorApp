@@ -1,0 +1,15 @@
+﻿<div class="card">
+    <div class="card-header">
+        @Product.Category
+    </div>
+    <div class="card-body">
+        <h5 class="card-title">@Product.Name</h5>
+        <p class="card-text">@Product.Description</p>
+        <a href="@Product.Link" class="btn btn-primary">Click here...</a>
+    </div>
+</div>
+
+@code {
+    [Parameter]
+    public Product Product { get; set; }
+}

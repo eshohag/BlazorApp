@@ -1,0 +1,18 @@
+﻿@page "/product/details"
+
+<ProductDetailComponent Product="product"></ProductDetailComponent>
+
+@code{
+    Product product = null;
+    protected override void OnInitialized()
+    {
+        product = new Product()
+        {
+            Name = "MUM Water",
+            Category = "Drinking Water",
+            Description = "Good for health...",
+            Link = "https://www.google.com"
+        };
+    }
+
+}
